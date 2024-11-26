@@ -55,15 +55,15 @@ panelInput.add(new JLabel(""));
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-              
+              //TODO LO HE SEPARADO
                 setBackground(Color.black);
 
-                g.setColor(Color.WHITE);
+                g.setColor(Color.white);
                 g.fillRect(0, 50, getWidth(), 10); // Línea superior
                 g.fillRect(0, getHeight() - 60, getWidth(), 10); // Línea inferior
 
                 // línea central de movimiento
-                g.setColor(Color.YELLOW);
+                g.setColor(Color.yellow);
                 for (int i = 0; i < getWidth(); i += 40) {
                     g.fillRect(i, getHeight() / 2 - 5, 20, 10); 
                 }
@@ -73,21 +73,21 @@ panelInput.add(new JLabel(""));
                 g.fillRect(xPos+15, getHeight() / 2 - 40, 70, 20);
 
                 //ventanas del carro
-                g.setColor(Color.CYAN);
+                g.setColor(Color.cyan);
                 g.fillRect(xPos+25, getHeight() / 2 - 35, 25, 15); 
                 g.fillRect(xPos+55, getHeight() / 2 - 35, 25, 15); 
 
                 //ruedas
-                g.setColor(Color.BLACK);
+                g.setColor(Color.lightGray);
                 g.fillOval(xPos+10, getHeight() / 2 + 10, 20, 20); 
                 g.fillOval(xPos+65, getHeight() / 2 + 10, 20, 20);  
 
                 //luces
-                g.setColor(Color.RED);
+                g.setColor(Color.red);
                 g.fillRect(xPos, getHeight() / 2 - 5, 5, 10);
                 g.fillRect(xPos+95, getHeight() / 2 - 5, 5, 10); 
 
-                g.setColor(Color.YELLOW);
+                g.setColor(Color.yellow);
                 g.fillRect(xPos+95, getHeight() / 2 - 20, 5, 10); 
                 g.fillRect(xPos, getHeight() / 2 - 20, 5, 10);  
             }
@@ -133,9 +133,9 @@ panelInput.add(new JLabel(""));
     private void animacionActionPerformed(java.awt.event.ActionEvent evt) {
         if (timer != null && timer.isRunning()) {
             timer.stop();
-        }
+        }  // ESTO ES PARA EL TIEMPO 
 
-        xPos = 20; // posicion inicial
+        xPos = 20; // posicion del carro
         posicion = 0;
         timer = new Timer(10, new ActionListener() {
             private double 
@@ -143,15 +143,15 @@ panelInput.add(new JLabel(""));
 
             @Override
             public void actionPerformed(ActionEvent e) {
-                tiempoActual += 0.02;
+                tiempoActual += 0.01;
                 posicion = velocidadInicial * tiempoActual + 0.5 * aceleracion * Math.pow(tiempoActual, 3);
-                xPos = 40 + (int) posicion;
+                xPos = 0 + (int) posicion;
 
                 if (tiempoActual >= tiempo || xPos >= panelMovimiento.getWidth() - 50) {
-                    timer.stop();
+                    timer.stop();  // esto permite detenerse en el momento seleccionado
                 }
 
-                panelMovimiento.repaint();
+                panelMovimiento.repaint();// volver todo al inicio
             }
         });
         timer.start();
