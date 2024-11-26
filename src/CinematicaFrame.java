@@ -17,7 +17,9 @@ public class CinematicaFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
-
+        
+        
+        
         // Panel de Entrada
         JPanel panelInput = new JPanel();
         panelInput.setLayout(new GridLayout(5, 9));

@@ -42,7 +42,7 @@ public class principal extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("CINEMÁTICA DE UNA PARTÍCULA");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, -1, 90));
 
         MRUV.setBackground(new java.awt.Color(0, 0, 0));
         MRUV.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -78,8 +78,8 @@ public class principal extends javax.swing.JFrame {
         jLabel5.setText("GRUPO 3");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 540, -1, -1));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ventanas/logoU.png"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 0, 390, 80));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ventanas/logo.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 10, 90, 80));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ventanas/fondo1.PNG"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 613));

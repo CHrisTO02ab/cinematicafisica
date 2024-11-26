@@ -123,8 +123,8 @@ public class Pantalla extends javax.swing.JFrame {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 170, 40));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ventanas/logoU.png"))); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 490, -1, -1));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ventanas/logo.png"))); // NOI18N
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 480, -1, -1));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ventanas/Fondo.jpeg"))); // NOI18N
         Fondo.setText("jLabel5");
@@ -134,7 +134,7 @@ public class Pantalla extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
